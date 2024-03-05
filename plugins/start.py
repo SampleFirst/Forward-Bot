@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 INDEX_FILES = {}
 
-@Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
+@Client.on_message(filters.command("start") & filters.incoming)
 async def start(bot, message):    
     if len(message.command) != 2:
         buttons = [[
