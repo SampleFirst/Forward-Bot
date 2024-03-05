@@ -24,7 +24,7 @@ async def start(bot, message):
         await message.reply_text(
             text="""Hello I am a Auto Forward Bot devoloped by @kcfilmss & @mr_MKN I can forward files from a Public/Private Channel to a Public/Private Group/Channel.""",
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
         return
 
@@ -37,7 +37,7 @@ async def start(bot, message):
         await message.reply_text(            
             text="""Hello I am a Auto Forward Bot devoloped by @kcfilmss & @mr_MKN I can forward files from a Public/Private Channel to a Public/Private Group/Channel.""",
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
         return
     data = message.command[1]
